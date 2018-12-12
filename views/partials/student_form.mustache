@@ -1,0 +1,62 @@
+<div class="row justify-content-center">
+  <div class="col-auto">
+	<div class="m-5" style="background:#f9f9f9;border:1px solid #ddd;border-radius:3px;padding:12px;">
+		<form action="" method="post">
+			<div class="row-12 text-right p-1">
+				<label>First Name:</label>&nbsp&nbsp<input type="text" name="firstName" placeholder="First Name">
+			</div>
+			<div class="row-12 text-right p-1">
+				<label>Last Name:</label>&nbsp&nbsp<input type="text" name="lastName" placeholder="Last Name">
+			</div>
+			<div class="row-12 text-right p-1">
+				<label>School:</label>&nbsp&nbsp<select name="school">
+												                  {{#schools}}
+												                    <option value="{{_id}}">{{name}}</option>
+												                  {{/schools}}
+										                    </select>
+			</div>
+			<div class="row-12 text-right p-1">
+				<label>E-mail</label>&nbsp&nbsp<input type="text" name="email" placeholder=''>
+			</div>
+      <div class="row-12 text-right p-1">
+        <select name="choice1">
+          {{#topics}}
+          <option value="{{_id}}">{{title}}</option>
+          {{/topics}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice2">
+          {{#topics}}
+          <option value="{{_id}}">{{title}}</option>
+          {{/topics}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice3">
+          {{#topics}}
+          <option value="{{_id}}">{{title}}</option>
+          {{/topics}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice4">
+          {{#topics}}
+          <option value="{{_id}}">{{title}}</option>
+          {{/topics}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice5">
+          {{#topics}}
+          <option value="{{_id}}">{{title}}</option>
+          {{/topics}}
+        </select>
+      </div>
+      <div class="row justify-content-center">
+        <input type="submit">
+      </div>
+		</form>
+	</div>
+</div>
+</div>

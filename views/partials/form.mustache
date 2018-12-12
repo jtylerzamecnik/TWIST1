@@ -1,0 +1,64 @@
+<div class="col-auto">
+	<div class="m-3" style="background:#f9f9f9;border:1px solid #ddd;border-radius:3px;padding:12px;">
+		<form action="/register" method="post">
+			<div class="row-12 text-right p-1">
+				First Name:      <input type="text" name="firstName" placeholder="First Name">
+			</div>
+			<div class="row-12 text-right p-1">
+				Last Name:      <input type="text" name="lastName" placeholder="Last Name">
+			</div>
+			<div class="row-12 text-right p-1">
+				Address:      <input type="text" name="address" placeholder="1234 5th st">
+			</div>
+			<div class="row-12 text-right p-1">
+				School:      <select name="schools">
+												{{#school}}
+												  <option value="{{_id}}">{{name}}</option>
+												{{/school}}
+											</select>
+			</div>
+			<div class="row-12 text-right p-1">
+				E-mail:      <input type="text" name="email" placeholder=''>
+			</div>
+			<div class="row-12 text-right p-1">
+				Phone Number:      <input type="text" name="phone" placeholder = "000-000-0000">
+			</div>
+      <div class="row-12 text-right p-1">
+        <select name="choice1">
+          {{#topic}}
+          <option value="{{_id}}">{{title}}</option>
+          {{/topic}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice2">
+          {{#topic}}
+          <option value="{{title}}">{{title}}</option>
+          {{/topic}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice3">
+          {{#topic}}
+          <option value="{{title}}">{{title}}</option>
+          {{/topic}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice4">
+          {{#topic}}
+          <option value="{{title}}">{{title}}</option>
+          {{/topic}}
+        </select>
+      </div>
+      <div class="row-12 text-right p-1">
+        <select name="choice5">
+          {{#topic}}
+          <option value="{{title}}">{{title}}</option>
+          {{/topic}}
+        </select>
+      </div>
+      <button type="button" action="" method="post">Submit</button>
+		</form>
+	</div>
+</div>
